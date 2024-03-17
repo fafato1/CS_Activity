@@ -8,13 +8,14 @@
 int main()
 {
     std::cout << "Enter the event name: ";
+
     std::string test;
+
     std::cin >> test;
+
     auto TempEvent = new Events();
     TempEvent->SetEventName(&test);
     std::cout << TempEvent->GetEventName() <<" World!\n";
 
     return 0;
 }
-
-
