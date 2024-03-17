@@ -7,8 +7,8 @@ Events::Events()
 
 }
 
-void Events::SetEventName(const char* TempName) {
-    Events::Name = std::make_unique<std::string>(TempName);
+void Events::SetEventName(std::string* TempName) {
+    Name = TempName;
 }
 
 std::string Events::GetEventName() const 
